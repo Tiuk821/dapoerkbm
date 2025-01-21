@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #EAE2C6;
+    height: 100%; /* Pastikan body memenuhi tinggi layar */
+}
+
+.hero-container {
+    width: 100vw; /* Memenuhi lebar layar */
+    height: 100vh; /* Memenuhi tinggi layar */
+    overflow: hidden; /* Mencegah elemen keluar dari pembungkus */
+    position: relative; /* Untuk mengatur posisi elemen teks */
+}
+
+.hero {
+    width: 100%; /* Gambar memenuhi lebar layar */
+    height: 100%; /* Gambar memenuhi tinggi layar */
+    object-fit: cover; /* Menjaga proporsi gambar tanpa distorsi */
+}
+
+.judul-1 {
+    position: absolute; /* Atur posisi teks relatif terhadap pembungkus */
+    top: 350px; /* Tempatkan di tengah vertikal */
+    left: 50%; /* Tempatkan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan teks sepenuhnya */
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Pastikan font diaplikasikan */
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.judul-2
+{
+    position: absolute; /* Atur posisi teks relatif terhadap pembungkus */
+    top: 390px; /* Tempatkan di tengah vertikal */
+    left: 50%; /* Tempatkan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan teks sepenuhnya */
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Playwrite IN', sans-serif; /* Pastikan font diaplikasikan */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.judul-3
+{
+    position: absolute; /* Atur posisi teks relatif terhadap pembungkus */
+    top: 450px; /* Tempatkan di tengah vertikal */
+    left: 50%; /* Tempatkan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan teks sepenuhnya */
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Pastikan font diaplikasikan */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cta-btn a
+{
+    position: absolute; /* Atur posisi teks relatif terhadap pembungkus */
+    top: 550px; /* Tempatkan di tengah vertikal */
+    left: 50%; /* Tempatkan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan teks sepenuhnya */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.cta-btn a:hover
+{
+    position: absolute; /* Atur posisi teks relatif terhadap pembungkus */
+    top: 550px; /* Tempatkan di tengah vertikal */
+    left: 50%; /* Tempatkan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan teks sepenuhnya */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    transition: 0.2s;
+}
+
+.kelebihan-container
+{
+    background-color: #fffbf5;
+    width: 100vw;
+}
+
+.judul-kelebihan
+{
+    color: #c8a287;
+}
+
+.isi-kelebihan h4, .isi-kelebihan p
+{
+    color: #4d3f28;
+}
+
+.produk-container
+{
+    background-color: #c8a287;
+    width: 100vw;
+
+}
+
+.produk-judul
+{
+    color: white;
+    text-align: center;
+}
+
+.produk-judul-2
+{
+    color: black;
+    text-align: center;
+}
+
+.card-container
+{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-container-center
+{
+    text-align: center !important;
+}
+
+.img-product
+{
+    width: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.product-card
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.product-mid
+{
+    display: flex;
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    gap: 150px; /* Tambahkan jarak antar card jika diperlukan */
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 750px) {
+    .product-mid {
+        flex-direction: column; /* Susun elemen dalam satu kolom */
+        align-items: center; /* Pusatkan elemen di tengah */
+        gap: 20px; /* Tambahkan jarak antar kartu */
+    }
+
+    .product-card {
+        width: 90%; /* Sesuaikan lebar kartu agar lebih kecil di layar kecil */
+        max-width: 300px; /* Tetapkan batas maksimal untuk menjaga proporsi */
+        margin: 0 auto; /* Pusatkan kartu secara horizontal */
+    }
+
+    .img-product {
+        width: 100%; /* Gambar menyesuaikan dengan lebar kartu */
+        height: auto; /* Pertahankan proporsi gambar */
+    }
+}
+
+/* Card dari chatgpt */
+/* Product Card */
+.product-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Product Info */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #c8a287;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #c8a287;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #a6725e;
+}
+
